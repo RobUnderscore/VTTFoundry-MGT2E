@@ -1,0 +1,16 @@
+.window-app {
+  font-family: $font-primary;
+}
+
+.sheet {
+  min-width: 850px;
+}
+
+.rollable {
+  &:hover,
+  &:focus {
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
+  }
+}

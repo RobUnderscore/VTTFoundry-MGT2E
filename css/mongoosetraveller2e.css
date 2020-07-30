@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");
+/* Global styles */
+.window-app {
+  font-family: "Roboto", sans-serif;
+}
+
+.sheet {
+  min-width: 850px;
+}
+
+.rollable:hover, .rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.grid-3col {
+  grid-column: span 3 / span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4col {
+  grid-column: span 4 / span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-6col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-7col {
+  grid-column: span 7 / span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-8col {
+  grid-column: span 8 / span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-9col {
+  grid-column: span 9 / span 9;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-10col {
+  grid-column: span 10 / span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-11col {
+  grid-column: span 11 / span 11;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-12col {
+  grid-column: span 12 / span 12;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+.flex-group-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-group-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* Styles limited to mongoosetraveller2e sheets */
+.mongoosetraveller2e .sheet {
+  min-width: 550px;
+}
+
+.mongoosetraveller2e .item-form {
+  font-family: "Roboto", sans-serif;
+}
+
+.mongoosetraveller2e .window-content {
+  background: url("../images/squared_metal.png");
+}
+
+.mongoosetraveller2e .skill-false {
+  font-style: italic;
+  text-decoration: line-through;
+  font-weight: normal !important;
+  text-transform: capitalize !important;
+}
+
+.mongoosetraveller2e .downgrade-skill-false {
+  color: grey;
+}
+
+.mongoosetraveller2e .downgrade-skill-true {
+  color: black;
+}
+
+.mongoosetraveller2e .downgrade-skill-true:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.mongoosetraveller2e .upgrade-skill-3:hover, .mongoosetraveller2e .upgrade-skill-2:hover, .mongoosetraveller2e .upgrade-skill-1:hover, .mongoosetraveller2e .upgrade-skill0:hover, .mongoosetraveller2e .upgrade-skill1:hover, .mongoosetraveller2e .upgrade-skill2:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.mongoosetraveller2e i.upgrade-skill3 {
+  color: grey;
+}
+
+.mongoosetraveller2e .upgrade-joat-0, .mongoosetraveller2e .upgrade-joat-1, .mongoosetraveller2e .upgrade-joat-2, .mongoosetraveller2e .downgrade-joat-1, .mongoosetraveller2e .downgrade-joat-2, .mongoosetraveller2e .downgrade-joat-3 {
+  color: black;
+}
+
+.mongoosetraveller2e .upgrade-joat-0:hover, .mongoosetraveller2e .upgrade-joat-1:hover, .mongoosetraveller2e .upgrade-joat-2:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.mongoosetraveller2e .downgrade-joat-1:hover, .mongoosetraveller2e .downgrade-joat-2:hover, .mongoosetraveller2e .downgrade-joat-3:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.mongoosetraveller2e .downgrade-joat-0, .mongoosetraveller2e .upgrade-joat-3 {
+  color: grey;
+}
+
+.mongoosetraveller2e .sheet-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 210px;
+  flex: 0 0 210px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.mongoosetraveller2e .sheet-header .profile-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.mongoosetraveller2e .sheet-header .header-fields {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.mongoosetraveller2e .sheet-header h1.charname {
+  height: 25px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+  font-size: 14px;
+}
+
+.mongoosetraveller2e .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.mongoosetraveller2e .sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+
+.mongoosetraveller2e .sheet-body,
+.mongoosetraveller2e .sheet-body .tab,
+.mongoosetraveller2e .sheet-body .tab .editor {
+  height: 100%;
+}
+
+.mongoosetraveller2e .tox .tox-editor-container {
+  background: #fff;
+}
+
+.mongoosetraveller2e .tox .tox-edit-area {
+  padding: 0 8px;
+}
+
+.mongoosetraveller2e .resource-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mongoosetraveller2e .tabs {
+  height: 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+
+.mongoosetraveller2e .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.mongoosetraveller2e .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.mongoosetraveller2e .items-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.mongoosetraveller2e .items-list .item-header {
+  font-weight: bold;
+}
+
+.mongoosetraveller2e .items-list .item {
+  height: 30px;
+  line-height: 24px;
+  padding: 3px 0;
+  border-bottom: 1px solid #BBB;
+}
+
+.mongoosetraveller2e .items-list .item .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 24px;
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+
+.mongoosetraveller2e .items-list .item img {
+  display: block;
+}
+
+.mongoosetraveller2e .items-list .item-name {
+  margin: 0;
+}
+
+.mongoosetraveller2e .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 86px;
+  flex: 0 0 86px;
+  text-align: right;
+}
